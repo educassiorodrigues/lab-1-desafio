@@ -1,21 +1,31 @@
 package domain;
 
+import java.util.Date;
+
 public class Loja {
     private String nome;
     private int quantidadeFuncionarios;
     private double salarioBaseFuncionario;
+    private Data dataFundacao;
+    private Endereco endereco;
 
-    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario) {
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,  Data dataFundacao, Endereco endereco) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = salarioBaseFuncionario;
+        this.endereco = endereco;
+        this.dataFundacao = dataFundacao;
     }
 
-    public Loja(String nome, int quantidadeFuncionarios) {
+    public Loja(String nome, int quantidadeFuncionarios, Data dataFundacao, Endereco endereco) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.dataFundacao = dataFundacao;
+        this.endereco = endereco;
         this.salarioBaseFuncionario = -1;
     }
+
+    protected Loja() {}
 
     public String getNome() {
         return nome;
@@ -63,6 +73,8 @@ public class Loja {
                 "nome='" + nome + '\'' +
                 ", quantidadeFuncionarios=" + quantidadeFuncionarios +
                 ", salarioBaseFuncionario=" + salarioBaseFuncionario +
+                ", dataFundacao=" + dataFundacao +
+                ", endereco=" + endereco +
                 '}';
     }
 }
