@@ -9,7 +9,7 @@ public class Main {
 
         Data hoje = new Data(9, 05, 2023);
         Endereco endereco = new Endereco("coronel alvaro de moraes", "montenegro", "rs", "brasil", "92523570", "1115", "");
-        Loja loja = new Loja("Uniloja", 10, hoje, endereco);
+        Loja loja = new Loja("Uniloja", 10,  endereco, hoje);
 
         System.out.println(loja.toString());
     }

@@ -7,12 +7,12 @@ import domain.Loja;
 public class Vestuario extends Loja {
     private boolean produtosImportados;
 
-    public Vestuario(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Data dataFundacao, Endereco endereco, boolean produtosImportados) {
+    public Vestuario(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao, boolean produtosImportados) {
         super(nome, quantidadeFuncionarios, salarioBaseFuncionario, dataFundacao, endereco);
         this.produtosImportados = produtosImportados;
     }
 
-    public boolean isProdutosImportados() {
+    public boolean getProdutosImportados() {
         return produtosImportados;
     }
 

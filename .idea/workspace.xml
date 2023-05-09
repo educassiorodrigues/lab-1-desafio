@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="730695ea-206f-4ac0-83df-ef051d62b3e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/domain/lojas/Alimentacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/lojas/Bijuteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/lojas/Cosmetico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/lojas/Informatica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/lojas/Vestuario.java" afterDir="false" />
+    <list default="true" id="730695ea-206f-4ac0-83df-ef051d62b3e5" name="Changes" comment="Adiciona Etapa 3">
+      <change afterPath="$PROJECT_DIR$/src/domain/d4b01481-659d-407f-b7a0-ef854568f5e1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Loja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Loja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Alimentacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Alimentacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Bijuteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Bijuteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Cosmetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Cosmetico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Informatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Informatica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Vestuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Vestuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +43,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/projetos/unisinos.lab1.desafio",
+    "last_opened_file_path": "C:/projetos/unisinos.lab1.desafio/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,7 +54,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projetos\unisinos.lab1.desafio\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ValidadorEtapa3">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="unisinos.lab1.desafio" />
@@ -75,8 +80,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidadorEtapa3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="domain.ValidadorEtapa3" />
+      <module name="unisinos.lab1.desafio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ValidadorEtapa3" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Principal" />
       </list>
@@ -93,11 +106,24 @@
       <workItem from="1680644521003" duration="2183000" />
       <workItem from="1680797935260" duration="10000" />
       <workItem from="1681766904156" duration="5882000" />
-      <workItem from="1683668647965" duration="1484000" />
+      <workItem from="1683668647965" duration="1747000" />
+      <workItem from="1683670727721" duration="735000" />
     </task>
+    <task id="LOCAL-00001" summary="Adiciona Etapa 3">
+      <created>1683670289316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683670289316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adiciona Etapa 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adiciona Etapa 3" />
   </component>
 </project>

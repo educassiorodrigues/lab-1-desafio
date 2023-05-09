@@ -12,6 +12,8 @@ public class Loja {
     private Data dataFundacao;
     private Endereco endereco;
 
+
+
     public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,  Data dataFundacao, Endereco endereco) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
@@ -20,13 +22,23 @@ public class Loja {
         this.dataFundacao = dataFundacao;
     }
 
-    public Loja(String nome, int quantidadeFuncionarios, Data dataFundacao, Endereco endereco) {
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,  Endereco endereco,  Data dataFundacao) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+        this.endereco = endereco;
+        this.dataFundacao = dataFundacao;
+    }
+
+    public Loja(String nome, int quantidadeFuncionarios,Endereco endereco,  Data dataFundacao) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.dataFundacao = dataFundacao;
         this.endereco = endereco;
         this.salarioBaseFuncionario = -1;
     }
+
+
 
     protected Loja() {}
 
@@ -68,6 +80,22 @@ public class Loja {
         }
 
         return 'G';
+    }
+
+    public Data getDataFundacao() {
+        return dataFundacao;
+    }
+
+    public void setDataFundacao(Data dataFundacao) {
+        this.dataFundacao = dataFundacao;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 
     @Override
