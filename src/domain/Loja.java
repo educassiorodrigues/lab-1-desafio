@@ -1,5 +1,8 @@
 package domain;
 
+import domain.Data;
+import domain.Endereco;
+
 import java.util.Date;
 
 public class Loja {
@@ -74,7 +77,7 @@ public class Loja {
                 ", quantidadeFuncionarios=" + quantidadeFuncionarios +
                 ", salarioBaseFuncionario=" + salarioBaseFuncionario +
                 ", dataFundacao=" + dataFundacao +
-                ", endereco=" + endereco +
+                ", endereco " + endereco.toString() +
                 '}';
     }
 }
