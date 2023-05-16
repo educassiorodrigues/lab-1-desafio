@@ -1,9 +1,8 @@
 package domain;
 
-import domain.Data;
-import domain.Endereco;
+import java.util.Arrays;
 
-import java.util.Date;
+import static java.util.Objects.isNull;
 
 public class Loja {
     private String nome;
@@ -12,7 +11,27 @@ public class Loja {
     private Data dataFundacao;
     private Endereco endereco;
 
-    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario,  Data dataFundacao, Endereco endereco) {
+    private Produto[] estoqueProdutos;
+
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao, int quantidadeMaximaProdutos) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+        this.dataFundacao = dataFundacao;
+        this.endereco = endereco;
+        this.estoqueProdutos = new Produto[quantidadeMaximaProdutos];
+    }
+
+    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao, int quantidadeMaximaProdutos) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = -1;
+        this.dataFundacao = dataFundacao;
+        this.endereco = endereco;
+        this.estoqueProdutos = new Produto[quantidadeMaximaProdutos];
+    }
+
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Data dataFundacao, Endereco endereco) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.salarioBaseFuncionario = salarioBaseFuncionario;
@@ -20,7 +39,15 @@ public class Loja {
         this.dataFundacao = dataFundacao;
     }
 
-    public Loja(String nome, int quantidadeFuncionarios, Data dataFundacao, Endereco endereco) {
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario, Endereco endereco, Data dataFundacao) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+        this.endereco = endereco;
+        this.dataFundacao = dataFundacao;
+    }
+
+    public Loja(String nome, int quantidadeFuncionarios, Endereco endereco, Data dataFundacao) {
         this.nome = nome;
         this.quantidadeFuncionarios = quantidadeFuncionarios;
         this.dataFundacao = dataFundacao;
@@ -28,7 +55,62 @@ public class Loja {
         this.salarioBaseFuncionario = -1;
     }
 
-    protected Loja() {}
+    public Loja(String nome, int quantidadeFuncionarios, double salarioBaseFuncionario) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+    }
+
+    public Loja(String nome, int quantidadeFuncionarios) {
+        this.nome = nome;
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+        this.salarioBaseFuncionario = -1;
+    }
+
+
+    protected Loja() {
+    }
+
+    public void imprimeProdutos() {
+
+        for (Produto produto : this.estoqueProdutos) {
+
+            if (isNull(produto)) {
+                continue;
+            }
+
+            System.out.println(produto);
+        }
+    }
+
+    public boolean insereProduto(Produto produto) {
+        // na moral, porque nao trabalhar com list quando as listas vão ser manipuladas ? coisa de faculdade mesmo
+        for (int i = 0; i < this.estoqueProdutos.length; i++) {
+            if (isNull(this.estoqueProdutos[i])) {
+                this.estoqueProdutos[i] = produto;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public boolean removeProduto(String nome) {
+        if (this.estoqueProdutos.length == 0) {
+            return false;
+        }
+
+        boolean contemProduto = Arrays.stream(this.estoqueProdutos).anyMatch(loja -> !isNull(loja) && loja.getNome().equals(nome));
+        if (!contemProduto) {
+            return false;
+        }
+
+        this.estoqueProdutos = Arrays.stream(this.estoqueProdutos)
+                .filter(produto -> !isNull(produto) && !produto.getNome().equals(nome))
+                .toArray(Produto[]::new);
+
+        return true;
+    }
 
     public String getNome() {
         return nome;
@@ -58,8 +140,8 @@ public class Loja {
         return this.salarioBaseFuncionario == -1 ? -1 : this.quantidadeFuncionarios * this.salarioBaseFuncionario;
     }
 
-    public char tamanhoDaLoja(){
-        if(this.quantidadeFuncionarios < 10){
+    public char tamanhoDaLoja() {
+        if (this.quantidadeFuncionarios < 10) {
             return 'P';
         }
 
@@ -70,6 +152,30 @@ public class Loja {
         return 'G';
     }
 
+    public Data getDataFundacao() {
+        return dataFundacao;
+    }
+
+    public void setDataFundacao(Data dataFundacao) {
+        this.dataFundacao = dataFundacao;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public Produto[] getEstoqueProdutos() {
+        return estoqueProdutos;
+    }
+
+    public void setEstoqueProdutos(Produto[] estoqueProdutos) {
+        this.estoqueProdutos = estoqueProdutos;
+    }
+
     @Override
     public String toString() {
         return "Loja{" +
@@ -77,7 +183,8 @@ public class Loja {
                 ", quantidadeFuncionarios=" + quantidadeFuncionarios +
                 ", salarioBaseFuncionario=" + salarioBaseFuncionario +
                 ", dataFundacao=" + dataFundacao +
-                ", endereco " + endereco.toString() +
+                ", endereco=" + endereco +
+                ", estoqueProdutos=" + this.estoqueProdutos +
                 '}';
     }
 }
