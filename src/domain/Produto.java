@@ -7,7 +7,8 @@ public class Produto {
     private double preco;
     private Data dataValidade;
 
-    protected Produto(){}
+    protected Produto() {
+    }
 
     public Produto(String nome, double preco, Data dataValidade) {
         this.nome = nome;
@@ -15,26 +16,27 @@ public class Produto {
         this.dataValidade = dataValidade;
     }
 
-    public boolean estaVencido(Data dataValidade){
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public boolean estaVencido(Data dataValidade) {
         LocalDateTime dataAtual = LocalDateTime.now();
 
         boolean anoMaior = dataValidade.getAno() > dataAtual.getYear();
-        if(anoMaior){
+        if (anoMaior) {
             return true;
         }
 
         boolean mesmoAno = dataValidade.getAno() == dataAtual.getYear();
         boolean mesmoAnoMesMaior = mesmoAno && dataValidade.getMes() > dataAtual.getMonth().getValue();
-        if(mesmoAnoMesMaior){
+        if (mesmoAnoMesMaior) {
             return true;
         }
 
         boolean mesmoMes = dataValidade.getMes() == dataAtual.getMonth().getValue();
-        if(mesmoMes && dataValidade.getDia() > dataAtual.getDayOfMonth()){
-            return true;
-        }
-
-        return false;
+        return mesmoMes && dataValidade.getDia() > dataAtual.getDayOfMonth();
     }
 
     public boolean isVencido() {

@@ -32,12 +32,12 @@ public class Principal {
                 isInvalidOption = false;
             }
 
-            if(isInvalidOption){
+            if (isInvalidOption) {
                 System.out.println("Opção inválida, tente novamente");
             }
         }
 
-        if (produto.estaVencido(new Data(20,10,2023))) {
+        if (produto.estaVencido(new Data(20, 10, 2023))) {
             System.out.println("Produto vencido");
         }
 

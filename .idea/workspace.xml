@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="730695ea-206f-4ac0-83df-ef051d62b3e5" name="Changes" comment="Adiciona Etapa 3">
-      <change afterPath="$PROJECT_DIR$/src/domain/d4b01481-659d-407f-b7a0-ef854568f5e1.java" afterDir="false" />
+    <list default="true" id="730695ea-206f-4ac0-83df-ef051d62b3e5" name="Changes" comment="Adiciona Etapa 4">
+      <change afterPath="$PROJECT_DIR$/src/domain/Shopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Loja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/d4b01481-659d-407f-b7a0-ef854568f5e1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/lojas/Alimentacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Alimentacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/lojas/Bijuteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Bijuteria.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/lojas/Cosmetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Cosmetico.java" afterDir="false" />
@@ -39,40 +43,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/projetos/unisinos.lab1.desafio/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/projetos/unisinos.lab1.desafio/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\projetos\unisinos.lab1.desafio\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projetos\unisinos.lab1.desafio\src\domain\validadores" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ValidadorEtapa3">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.domain.validadores.ValidadorEtapa4">
+    <configuration name="ValidadorEtapa2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ValidadorEtapa2" />
       <module name="unisinos.lab1.desafio" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="domain.Principal" />
+    <configuration name="ValidadorEtapa3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ValidadorEtapa3" />
+      <module name="unisinos.lab1.desafio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidadorEtapa4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ValidadorEtapa4" />
+      <module name="unisinos.lab1.desafio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="domain.validadores.ValidadorEtapa1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="domain.validadores.ValidadorEtapa1" />
       <module name="unisinos.lab1.desafio" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="domain.*" />
+          <option name="PATTERN" value="domain.validadores.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,18 +101,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidadorEtapa3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="domain.ValidadorEtapa3" />
+    <configuration name="domain.validadores.ValidadorEtapa4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="domain.validadores.ValidadorEtapa4" />
       <module name="unisinos.lab1.desafio" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.validadores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ValidadorEtapa3" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.domain.validadores.ValidadorEtapa4" />
+        <item itemvalue="Application.ValidadorEtapa3 (1)" />
+        <item itemvalue="Application.ValidadorEtapa2" />
+        <item itemvalue="Application.domain.validadores.ValidadorEtapa1" />
+        <item itemvalue="Application.ValidadorEtapa4" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +136,8 @@
       <workItem from="1680797935260" duration="10000" />
       <workItem from="1681766904156" duration="5882000" />
       <workItem from="1683668647965" duration="1747000" />
-      <workItem from="1683670727721" duration="735000" />
+      <workItem from="1683670727721" duration="968000" />
+      <workItem from="1684192155618" duration="12453000" />
     </task>
     <task id="LOCAL-00001" summary="Adiciona Etapa 3">
       <created>1683670289316</created>
@@ -116,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683670289316</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adiciona Etapa 3">
+      <created>1683671569306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683671569306</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +161,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adiciona Etapa 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adiciona Etapa 3" />
+    <MESSAGE value="Adiciona Etapa 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adiciona Etapa 4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/domain/Shopping.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa4.java</url>
+          <line>340</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this.lojas[0]" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
