@@ -171,7 +171,6 @@ public class Loja {
     public Produto[] getEstoqueProdutos() {
         return estoqueProdutos;
     }
-
     public void setEstoqueProdutos(Produto[] estoqueProdutos) {
         this.estoqueProdutos = estoqueProdutos;
     }

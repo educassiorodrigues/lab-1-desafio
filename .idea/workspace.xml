@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="730695ea-206f-4ac0-83df-ef051d62b3e5" name="Changes" comment="Adiciona Etapa 4">
-      <change afterPath="$PROJECT_DIR$/src/domain/Shopping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa4.java" afterDir="false" />
+    <list default="true" id="730695ea-206f-4ac0-83df-ef051d62b3e5" name="Changes" comment="Otimização de codigo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Loja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/d4b01481-659d-407f-b7a0-ef854568f5e1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/validadores/ValidadorEtapa3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Alimentacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Alimentacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Bijuteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Bijuteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Cosmetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Cosmetico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Informatica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Informatica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/lojas/Vestuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/lojas/Vestuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +128,7 @@
       <workItem from="1683668647965" duration="1747000" />
       <workItem from="1683670727721" duration="968000" />
       <workItem from="1684192155618" duration="12453000" />
+      <workItem from="1684205949026" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="Adiciona Etapa 3">
       <created>1683670289316</created>

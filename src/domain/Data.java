@@ -23,7 +23,7 @@ public class Data {
         }
 
         if (!dataValida) {
-            System.out.println("Data inválida. Será atribuída a data padrão: 1/1/2000");
+            System.out.println("Data inválida. Será atribuído o data padrão: 1/1/2000");
             this.dia = 1;
             this.mes = 1;
             this.ano = 2000;
